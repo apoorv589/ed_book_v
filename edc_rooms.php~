@@ -97,7 +97,7 @@
 	}
 	else
 	{
-		$('#room_alloc_button').text('Submit');//alert('ehllo');
+		$('#room_alloc_button').text('Submit');
 	}	
 	
     //using checkbox name[] as name to send the list of values of checked checkboxes

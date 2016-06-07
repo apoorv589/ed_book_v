@@ -65,6 +65,7 @@ echo '<span id="auth" style="display:none;">'.$auth.'</span>';
 <script>
 $(document).ready(function(){
 	var current_build = $('#building :selected').text();
+	//If the page is loaded first time show initial value as Select .
 	if(current_build!='Selected' && $('#result_content').is(':empty'))
 	{	
 		
@@ -72,9 +73,9 @@ $(document).ready(function(){
 	}
 
 $('select[name="building"]').change(function(){
-		//if($('#building').val()=='extension'){
+		
 	var current_build = $('#building :selected').text();
-	
+	//Check the current building selected and accordingly get the content by an ajax call .
 	if(current_build=='Extension'){
 			$.ajax({
 	method: 'POST',
@@ -104,7 +105,7 @@ $('select[name="building"]').change(function(){
 		
 		}});
 	}
-	else
+	else//If select is chosen make the result_content empty .
 	{
 		$('#result_content').empty()	;	
 	}

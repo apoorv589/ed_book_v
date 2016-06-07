@@ -72,16 +72,16 @@
 			
                 $.ajax({
 			async : true,
-			//dataType : 'html' ,
+		
                     url : site_url('edc_booking/management/room_status/' + room_id + '/' + auth),
 			
                     error : function(e) {
                         alert(e.responseText);
                     },
                     success : function(result) {
-			//alert("PDI");		         
+		
 			 $('.modal-body').html(result);
-			//$('.modal-body .nav').tab();
+		
                     }
                 });
 		

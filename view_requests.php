@@ -36,7 +36,7 @@
 <?php
 		$sno=1;
 		while ($sno <= $total_rows_pending)
-		{
+		{//Fill the table with application no. applied on,applied by and no. of guests .
 ?>
 			<tr>
 				<td><a href="<?php echo site_url("edc_booking/booking_request/details/".$data_array_pending[$sno][1]."/".$auth);?>"><?php echo $data_array_pending[$sno][1];?></a></td>
@@ -242,6 +242,7 @@
 
 <script>
 	$(document).ready(function(){
+		//Make the page paginated and searchable .
 		$('#pending_requests table.dataTable').dataTable({
 			"searchable":true,
 			"paginated":true,

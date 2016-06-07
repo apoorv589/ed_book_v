@@ -101,7 +101,7 @@
 
 <script>
   $(document).ready(function(){
-
+//Check the status of rooms and accordingly proceed to show the buttons to remove block and unblock rooms .
     $('#remove').hide();
     $('#block').hide();
     $('#unblock').hide();

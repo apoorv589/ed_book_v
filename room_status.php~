@@ -45,7 +45,7 @@
         <tr>
             <th class="danger" colspan="2">Bookings</th>
         </tr>';
-	if($room_bookings)
+	if(isset($room_bookings))
         foreach($room_bookings as $booking) {
             echo '
             <tr class="bg-success">

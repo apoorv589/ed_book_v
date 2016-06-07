@@ -45,6 +45,7 @@
         <tr>
             <th class="danger" colspan="2">Bookings</th>
         </tr>';
+	//Execute only if room bookings are available .
 	if(isset($room_bookings))
         foreach($room_bookings as $booking) {
             echo '

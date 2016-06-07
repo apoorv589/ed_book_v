@@ -61,6 +61,7 @@
 
 <script>
 	$(document).ready(function(){
+		//Make the page searchable and paginated .
 		$('.dataTable').dataTable({
 			"searchable":true,
     		"paginated":true,

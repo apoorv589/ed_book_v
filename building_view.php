@@ -48,7 +48,9 @@
             $room_type_box->close();
         }
 ?>
-
+<?php
+	//Using bootstrap modal class to generate the pop up containing list of application numbers .
+?>
         <div id="room_app_list" class="modal fade">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -79,7 +81,7 @@
                         alert(e.responseText);
                     },
                     success : function(result) {
-		
+			//Replace the .modal-body class div with the content returned by ajax call .
 			 $('.modal-body').html(result);
 		
                     }
